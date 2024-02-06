@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Activity No.1</title>
+    
+</head>
+<body>
+
+    <div class="top-container">
+        <h1>JOHN PAUL VASQUEZ</h1>
+        <p>BSIT_2A</p>
+        <a id="con" href="https://web.facebook.com/OnePiece.Fan.1999.Paul/">&#128073;Contact Me&#128072;</a>
+      </div>
+      
+    <div class="header" id="myHeader">
+
+      <h2>Random Generator</h2>
+      
+    </div>
+
+
+    <div id="container">
+
+        <div id="img-cat-box">
+            <h1 id="title_cat1">Cat Image</h1>
+            <img id="cat-image"><br>
+    
+        </div>
+        <div id="btn_cat">
+            <button id="new_cat_btn">New Random Cat</button>
+        </div>
+
+        <div id="dog-image">
+          <h1 id="title_cat">Dog Image</h1>
+            <p id = 'dogImage'></p>
+
+        </div>
+
+        <div id="btn_dog">
+            <button id = 'new_dog_btn'>New Random Dog</button>
+        </div>
+    </div>
+    <div class="container1"> 
+      
+        <div id="card">
+        <div id="card-body">
+          <h1 id="title_cat">Random Quote</h1>
+          <blockquote id="blockquote mb-0">
+            <p>loading...</p>
+            <footer id="blockquote-footer">
+              <cite title="Source Title"></cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+        <div id="card-footer">
+            <button id="btn-primary">New Quote</div>
+        
+      </div>
+
+    </div>
+   
+</body>
+    <script src='cat_api.js'></script>
+    <script src='dog_api.js'></script>
+    <script src='quote_api.js'></script>
+    <script>
+    window.onscroll = function() {myFunction()};
+   
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        } else {
+        header.classList.remove("sticky");
+        }
+    }
+    </script>    
+</html>
